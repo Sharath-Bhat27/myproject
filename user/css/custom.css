@@ -1,0 +1,148 @@
+  /* Custom Color Scheme */
+    /* Custom Color Scheme */
+    :root {
+        --primary-color: #0077B6;
+        --secondary-color: #08a2fc;
+        --toggle-icon-secondary-color: #ffffff00;
+
+        /* --accent-color: #1c86ff; */
+
+        --background-color: #F1F1F1;
+ 
+        --text-color: #333333;
+
+    }
+
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Needed to push footer down */
+        margin: 0;
+    }
+    
+    .content {
+        flex: 1;
+    }
+    
+
+    .navbar {
+        background-color: var(--primary-color);
+        font-size: 10px;
+
+    }
+
+    .navbar-brand h1 {
+        color: white;
+        font-size: larger;
+    }
+
+    .navbar-nav .nav-link {
+        color: white;
+        font-size: large;
+        
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: rgb(79, 149, 255) !important;
+    }
+
+    /* Custom Toggle Icon */
+    .navbar-toggler-icon {
+        background-color: var(--toggle-icon-secondary-color);
+        /* Change the toggle icon color */
+    }
+
+    .navbar-toggler-icon:hover {
+        border: 1px solid var(--secondary-color);
+  
+    }
+
+    .navbar-toggler-icon:hover {
+        background-color: var(--toggle-icon-secondary-color);
+        /* Hover effect */
+    }
+
+    .navbar-toggler-icon:focus {
+        box-shadow: none;
+      
+    }
+
+
+    .btn-primary {
+        background-color: var(--primary-color) !important;
+        border-color: var(--primary-color) !important;
+        color: white !important;
+    }
+    
+    .btn-primary:hover {
+        background-color: var(--secondary-color) !important;
+        border-color: var(--secondary-color) !important;
+        color: white !important;
+    }
+    
+    .footer {
+        background-color: rgb(0, 78, 141) !important;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        position: relative; /* Important: no fixed or absolute! */
+        z-index: 1;
+        /* min-height: 100vh; */
+    }
+    
+    
+    
+    /* Hide footer on small screens */
+    @media (max-width: 576px) {
+        .footer {
+            display: none;
+        }
+    }
+  
+
+    @media (max-width: 576px) {
+        .footer {
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+    .footer > .container {
+        padding: 0;
+    }
+    
+
+    .card {
+        background-color: white;
+        border: 1px solid var(--primary-color);
+    }
+
+    .card-title {
+        color: var(--primary-color);
+    }
+
+    .accordion-button {
+        background-color: var(--primary-color);
+        color: white;
+    }
+
+    .accordion-button:hover {
+        background-color: var(--secondary-color);
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: var(--secondary-color);
+    }
+
+    .list-group-item {
+        background-color: white;
+        color: var(--text-color);
+    }
+
+    .list-group-item:hover {
+        background-color: var(--secondary-color);
+        color: white;
+    }
+    
